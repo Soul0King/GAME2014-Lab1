@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartButtonBehaviour : MonoBehaviour
+public class BackButtonBehaviour : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -15,10 +15,10 @@ public class StartButtonBehaviour : MonoBehaviour
         
     }
 
-    public void OnStartButtonClick()
+    public void OnBackButtonClick()
     {
-        Debug.Log("Start Button Pressed");
-        SceneManager.LoadScene("Play");
-        
+        int currentScene = SceneManager.GetActiveScene().buildIndex;
+        Debug.Log("Back Button Pressed");
+        SceneManager.LoadScene(currentScene - 1);
     }
 }
