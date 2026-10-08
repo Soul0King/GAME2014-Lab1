@@ -1,0 +1,23 @@
+using System;
+using UnityEngine;
+
+public class BackgroundScrolling : MonoBehaviour
+{
+    [SerializeField]
+    Vector2 verticalBoundary;
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        //transform.position = transform.position + Vector3.down * Time.deltaTime;
+        //if (transform.position.y < verticalBoundary.min)
+        //{
+        //    transform.position = new Vector3(transform.position.x, verticalBoundary.max, transform.position.z);
+        //}
+    }
+}
